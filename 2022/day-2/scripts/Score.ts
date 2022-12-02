@@ -46,7 +46,7 @@ async function main() {
     let opponent = options.get(fileContentFormatted[i][0])!;
     let me = options.get(fileContentFormatted[i][2])!;
     const points = await contract.play(opponent, me);
-    sum += points;
+    sum += points.toNumber();
   }
 
   console.log(`Total score: ${sum}`);

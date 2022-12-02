@@ -1,4 +1,4 @@
-# Day 1 @ Advent Of Code
+# [Day 1 @ Advent Of Code][1]
 
 ## Instalation
 ```shell
@@ -12,3 +12,5 @@ yarn run ts-node --files scripts/Deploy.ts
 yarn run ts-node --files scripts/AddCalories.ts "{contractAddress}" "{fileName}"
 yarn run ts-node --files scripts/Winner.ts "{contractAddress}"
 ```
+
+[1]: https://adventofcode.com/2022/day/1

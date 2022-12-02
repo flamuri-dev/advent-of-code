@@ -8,7 +8,7 @@ contract DayTwo {
         SCISSORS // 3 points
     }
 
-    mapping(Options => mapping(Options => uint8)) public points;
+    mapping(Options => mapping(Options => uint256)) public points;
 
     constructor() {
         points[Options.PAPER][Options.ROCK] =
@@ -40,7 +40,7 @@ contract DayTwo {
             pointsByMove(Options.SCISSORS); // 6 = 3 (draw) + 3 (scissors)
     }
 
-    function play(uint8 _opponentOption, uint8 _myOption) public view returns (uint8) {
+    function play(uint8 _opponentOption, uint8 _myOption) public view returns (uint256) {
         return points[Options(_opponentOption)][Options(_myOption)];
     }
 
